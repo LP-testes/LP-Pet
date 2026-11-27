@@ -1,0 +1,83 @@
+EMPÓRIO DOS BICHOS — LANDING PAGE / VERSÃO 20
+
+PRÉVIA
+Abra index.html no navegador. Não é necessário instalar nem compilar nada.
+A prévia no Codex utiliza http://127.0.0.1:4173/.
+
+O QUE FOI ATUALIZADO
+Sobre reorganizado: título e frase curta em um cabeçalho de largura total, cada um em uma linha. No computador, foto e texto da história começam alinhados. No celular, o conteúdo segue abaixo da foto.
+Espaço do Sobre corrigido: a foto agora acompanha a altura do título e da legenda. Mantém 24px entre a área do texto e a imagem, sem sobreposição mesmo com título em duas linhas.
+Títulos das sete seções padronizados em tamanho, peso, entrelinha e espaçamento. Escala responsiva: 44px no desktop, 38px em telas até 1150px, 34px até 900px, 32px até 650px e 30px até 375px. Sobre o Empório passou a ser o título semântico da seção; a mensagem de acolhimento permanece como texto de destaque.
+Fundos alternados entre creme e bege nas áreas claras. Divisórias com linha fina e patinha nas transições para Cuidados e Dúvidas. Mais respiro vertical e contraste dos cards de tosa e fisioterapia ajustado.
+Moldura e margens externas removidas. Cabeçalho e seções ocupam toda a largura da tela, sem contorno nem cantos externos arredondados. Espaçamento interno e cantos dos cards preservados.
+Removidos Biscoito e Luna ao lado do título Nossos cuidados. As cinco ilustrações dos cards continuam. Espaçamento do título ajustado no celular.
+Balão de fala reposicionado: mais próximo do Biscoito no celular e deslocado para a direita no computador, preservando os rostos. Tamanho e ponta ajustados em cada faixa de tela.
+Cabeçalho mais baixo, apenas com a marca centralizada e as duas patinhas. Botão e links Nossos cuidados e Unidades removidos do cabeçalho.
+Faixa de agenda acima do hero: Check up day dia 28/11 no Morumbi e 05/12 no Jardim Marajoara. Movimento contínuo da direita para a esquerda.
+A frase dos 25 anos está dentro do balão de fala do Biscoito. O topo da copy ficou livre dessa etiqueta.
+Texto do hero refinado para reforçar o vínculo com os pets e apresentar os serviços.
+Botões principais com seta deslizante e preenchimento marrom no hover ou foco pelo teclado.
+Removidos o texto de instrução e os controles de pausa e setas dos depoimentos.
+Depoimentos em faixa contínua com seis cartões, cores do Empório, bordas arredondadas e degradê suave nas laterais.
+Movimento de 26 px/s; pausa ao passar o mouse ou focar no cartão. Após interação por toque ou rolagem, o movimento retoma depois de alguns segundos. Sem instruções nem controles visíveis na seção.
+Respeita a preferência de movimento reduzido. O preenchimento continua em js/depoimentos.js, agora com seis registros.
+Removidos os textos indicados no cabeçalho de cuidados, unidades, contato e rodapé.
+Cada um dos cinco cartões de cuidados tem um botão Agendar que abre a escolha da unidade. O botão + mantém os detalhes do serviço.
+Rodapé simplificado com marca, redes sociais e WhatsApps das unidades.
+A frase A gente já está te esperando acompanha os mascotes no bloco de contato.
+Cabeçalho fixo durante a rolagem no computador, tablet e celular. As âncoras reservam espaço para o cabeçalho.
+Cinco ilustrações exclusivas de Biscoito e Luna nos cuidados: banho, tosa, clínica, fisioterapia e loja.
+Ilustrações geradas com a ferramenta nativa de imagem, com fundo transparente e o par original como referência de identidade.
+Marca do cabeçalho com duas patinhas e sem o slogan.
+Hero comemorativo: 25 anos cuidando de quem você ama. Uma história escrita com patas, amor e confiança.
+Balão de fala com ponta voltada para Biscoito; ao tocar, abre a apresentação dos mascotes.
+Idade da marca atualizada para 25 anos no Sobre e na galeria de diferenciais.
+Cabeçalho claro com marca centralizada, sem botão, links de navegação ou menu hambúrguer.
+Removido o grande título acima do hero. A abertura agora concentra a mensagem, os mascotes e o agendamento na área marrom.
+Hero compacto no celular, com botão de agendamento visível na primeira tela e descrição direta dos serviços e bairros.
+Fotos reais da equipe, comemoração e pets recuperadas do site atual, aplicadas no Sobre e na galeria de diferenciais. Os mascotes continuam no hero e no contato.
+Seis cartões de depoimento prontos para preenchimento manual, com foto, nome, texto, unidade e estrelas.
+FAQ com seis perguntas; uma resposta aberta por vez e acesso à escolha da unidade.
+WhatsApps com a mensagem fornecida pelo usuário e número de Sócrates corrigido.
+
+CONTATOS
+Morumbi: (11) 96595-0143 — https://wa.me/5511965950143
+Sócrates / Jardim Marajoara: (11) 96601-8786 — https://wa.me/5511966018786
+O link colado pelo usuário para Sócrates repetia o número de Morumbi. Foi utilizado o número escrito no contato de Sócrates.
+Telefone Morumbi: (11) 3507-7434.
+Telefone Sócrates: (11) 5686-4393.
+Os contatos, Instagram, Facebook e links de mapa estão centralizados no início de js/script.js, em LINKS PARA EDITAR.
+
+COMO PREENCHER OS DEPOIMENTOS
+1. Coloque as fotos em assets/images, com nomes simples, como cliente-morumbi.jpg.
+2. Abra js/depoimentos.js.
+3. Preencha os campos nome, foto, texto e unidade de cada cartão. As estrelas começam em 5 e aceitam valores de 1 a 5.
+4. No campo foto, use um caminho relativo, por exemplo: assets/images/cliente-morumbi.jpg.
+5. Salve o arquivo e atualize a página. O cartão e a foto são preenchidos automaticamente.
+
+Enquanto nome e texto estiverem vazios, o cartão será identificado como ESPAÇO RESERVADO. Nenhum depoimento nem identidade de cliente foi inventado. Não foi possível confirmar relatos diretamente no Google; não há selo de avaliação Google nem nota agregada atribuída a ele.
+Você pode deixar foto vazia e usar apenas nome e texto. O avatar permanece como um ícone até uma foto ser adicionada.
+
+COMO EDITAR AS FOTOS DA GALERIA
+No início de js/script.js, encontre DIFERENCIAIS. Altere imagem, textoAlternativo e posicao. Use ajuste: 'cover' para fotos; a visualização ampliada mostra a foto inteira.
+As quatro fotos reais utilizadas vieram de https://emporiodosbichos.com.br/:
+assets/images/equipe-emporio.jpeg — equipe reunida com pets na loja.
+assets/images/historia-emporio.jpeg — comemoração com integrantes da equipe e o mascote.
+assets/images/pet-meg.webp e assets/images/pet-mel.webp — fotos de pets publicadas no site atual.
+Não alteramos as fotos; os enquadramentos são definidos pelo layout.
+
+ESTRUTURA
+index.html — conteúdo, seções, FAQ e janelas.
+css/styles.css — aparência e adaptação aos tamanhos de tela.
+js/script.js — contatos e interações.
+js/depoimentos.js — conteúdo dos depoimentos para edição manual.
+assets/fonts/noteworthy-light.ttf — fonte fornecida pelo usuário.
+assets/images — fotos e ilustrações utilizadas.
+
+PUBLICAÇÃO
+Envie index.html, css, js e assets para a raiz do repositório no GitHub. Em Settings > Pages, selecione Deploy from a branch > main > /(root).
+A área para colar o código oficial do Meta Pixel está no início do body em index.html.
+Os testes e arquivos de exemplo da pasta qa não fazem parte do ZIP.
+
+COMO EDITAR A FAIXA DE AGENDA
+Em index.html, procure event-marquee. Atualize o texto acessível em event-readable e as repetições visuais em event-message. As repetições garantem o movimento contínuo. Em css/styles.css, event-ticker controla a animação.
